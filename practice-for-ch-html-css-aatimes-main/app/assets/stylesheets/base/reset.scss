@@ -5,8 +5,8 @@ ul, li, strong, main, button, i,
 section, img, div, h2, p, form,
 fieldset, label, input, textarea,
 span, article, footer, time, small {
-  // margin:
-  // padding:
+  margin: 0;
+  // padding: 0;
   // border:
   // outline:
   // font:
@@ -14,18 +14,18 @@ span, article, footer, time, small {
   // text-align:
   // text-decoration:
   // vertical-align:
-  // box-sizing:
+  box-sizing: content-box;
   // background:
 }
 
 ol, ul {
-  // list-style:
+  list-style:none;
 }
 
 img {
-  // display:
-  // width:
-  // height:
+  display: block;
+  width:inherit;
+  height:auto;
 }
 
 input[type="password"],
@@ -45,10 +45,15 @@ button {
 
 button,
 input[type="submit"] {
-  // cursor:
+  cursor:grabbing;
 }
 
 /* Clearfix */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
 
 .group:after {
   // ...
